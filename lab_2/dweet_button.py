@@ -1,3 +1,4 @@
+
 """
 File: chapter02/dweet_button.py
 
@@ -29,7 +30,7 @@ LED_STATES = ['off', 'on', 'blink']
 current_led_state = 0 # off
 
 # Make sure thing_name matches the "dweet_led thing" you want to control.
-thing_name = '**** ADD YOUR THING NAME HERE ****'
+thing_name = 'flaebc72'
 URL = 'https://dweet.io'
 
 
@@ -54,6 +55,7 @@ def cycle_led_state():
         current_led_state = 0
 
     state = LED_STATES[current_led_state]
+    print("state is: " ,state)
 
     logger.info('Setting LED state %s', state)
     send_dweet(thing_name, {'state': state})
