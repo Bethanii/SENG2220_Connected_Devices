@@ -26,7 +26,7 @@ int main(void)
    // %x - hexadecimal representation
     printf("Enter a bit pattern in hexadecimal: ");
     scanf("%x", &y);
- 
+
    // %010x - hexadecimal formatting
    // this is printing out the memory location for both values
    // & (ampersand) is used  to point to the value of a variable in its memory location 
